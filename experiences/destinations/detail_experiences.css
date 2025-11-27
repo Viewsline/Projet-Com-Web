@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* conteneur fixe centré */
+section {
+  width: 90%;
+  max-width: 10000px;
+  margin: 1.25rem auto;
+  background: #F7F1DF;
+  border: 2px solid #701E39;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: start;
+  text-align: left;
+}
+
+section>h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+
+
+/* titres / textes */
+section h1,
+section h2,
+section h3 {
+  color: #701E39;
+  margin: 0.4rem 0
+}
+
+p {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+  color: #222;
+}
+
+
+/* guide avatar */
+article img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+}
+
+/* bouton propre */
+article a {
+  background: #701E39;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* Flex pour les sections texte + image */
+section {
+  display: flex;
+  gap: 2rem;
+  margin: 40px 0;
+  align-items: stretch;
+}
+
+/* Article = texte */
+section > article {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Figure = image */
+section > figure {
+  flex: 1;
+}
+
+section > figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Inverser l’ordre du deuxième bloc */
+section:nth-of-type(1),
+section:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+/* Articles de la section "Éléments factuels" */
+main h1 + div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header h1{
+	color: #f3ece2;
+}
+/* css de la section "Element factuels" */
+h1 + div > article {
+  background-color: white;
+  border: 2px solid #701E39;
+  border-radius: 10px;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h3 {
+  color: #701E39; /* ton bordeaux existant pour rester cohérent */
+}
+
+p, li {
+  color: #333; /* texte sombre, lisible */
+}
+
+/*Espacement autour des textes*/
+
+article p, article ul {
+  margin-bottom: 1rem;
+  line-height: 1.6; /* rend le texte plus aéré */
+}
+
+figure img {
+  border-radius: 10px;
+}
+
+/* truc transparent */
+
+h1 + div > article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+section {
+  padding: 2rem 5%;
+  border-radius: 10px;
+}
+
+footer p{
+	color: #f3ece2;
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* Couleurs principales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F7F1DF; /* beige */
+}
+
+/* Navigation */
+nav {
+  background-color: #701E39;
+  color: #F7F1DF;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav div {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+}
+
+nav a img {
+  width: auto;
+  height: 6rem;
+}
+
+nav h1 {
+  margin-left: 2rem;
+}
+
+nav a {
+  color: #F7F1DF;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+section, main {
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Boutons (appliqués aussi aux <a class="button">) */
+button, .button {
+  background-color: #701E39;
+  color: #F7F1DF;
+  padding: 0.5rem 1rem;
+  /* pas de margin-top par défaut — l'espacement est laissé au conteneur */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  display: inline-block;
+  text-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, .button:hover,
+button:focus, .button:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+}
+
+/* Pied de page */
+footer {
+  background-color: #701E39;
+  color: #F7F1DF;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #F7F1DF;
+  text-decoration: none;
+}
+
+footer p {
+  color:#F7F1DF;
+}
+
+@media (max-width: 768px) {
+  nav div {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav h1 {
+    margin: 0;
+  }
+}

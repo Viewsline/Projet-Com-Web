@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.experiences h2 {
+  text-align: center;
+}
+
+.experiences article {
+  background-color: #F7F1DF;
+  border: 2px solid #701E39;
+  border-radius: 10px;
+  width: 250px;
+  margin: 1rem auto;
+  padding: 1rem;
+  transition: transform 250ms ease, box-shadow 250ms ease;
+  will-change: transform, box-shadow;
+  font-family: "Courier New";
+  display: flex;
+  flex-direction: column;
+}
+
+.experiences article:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(112, 30, 57, 0.18);
+}
+
+.experiences div img {
+  color: #F7F1DF;
+  /* Make all article images a consistent box and centered */
+  width: 100%;
+  max-width: 100%;
+  height: 10.5rem;
+  object-fit: cover; /* crop to fill the box consistently */
+  display: block;
+  margin: 0 auto 1.3rem; /* center horizontally and keep bottom gap */
+  float: none;
+  border-radius: 8px;
+  transition: transform 300ms ease;
+}
+
+.experiences article:hover img {
+  transform: scale(1.03);
+}
+
+/* Style pour les liens utilisant la classe .button */
+.experiences article .button {
+  background: #701E39;
+  color: #F7F1DF;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.4rem 0.4rem; /* légèrement plus compact */
+  display: inline-block;
+  text-align: center;
+  margin-top: auto; /* pousse le bouton en bas de l'article */
+  margin-bottom: 0.8rem; /* petit espace sous le bouton */
+  align-self: center; /* centre horizontalement dans l'article */
+  min-width: 7rem; /* largeur minimale uniforme */
+  max-width: 11rem; /* évite qu'il soit trop long */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.experiences article .button:hover {
+  background: #8a274a;
+  transform: translateY(-2px);
+}

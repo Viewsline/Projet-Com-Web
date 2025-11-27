@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Réservation - ARCANA</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="./reservation.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+            <div>
+                <h1>ARCANA</h1>
+                <div>
+                    <a href="../experiences/experiences.html">Expériences</a>
+                    <a href="">Réservation</a>
+                    <a href="../apropos/apropos.html">À propos de nous</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulaire de réservation</h2>
+        <form action="https://webdev.iut-orsay.fr/r102/tests/formulaire/test_formulaire.php" method="post">
+            <label>Expérience :
+                <select name="experience" id="experience" required>
+                    <option value="">--Selectionner une option--</option>
+                    <option value="Le Souffle des Catacombes">Le Souffle des Catacombes</option>
+                    <option value="Le Pont des Étoiles">Le Pont des Étoiles</option>
+                    <option value="Le Dîner des Éléments">Le Dîner des Éléments</option>
+                    <option value="Saut en parachute">Saut en parachute</option>
+                    <option value="Dormir au flanc de montagne">Dormir au flanc de montagne</option>
+                    <option value="Semaine coaching avion">Semaine coaching avion</option>
+                    <option value="Château virtuel">Château virtuel</option>
+                    <option value="Immersion à la ferme">Immersion à la ferme</option>
+                    <option value="Découverte culturelle & culinaire">Découverte culturelle & culinaire</option>
+                </select>
+            </label>
+
+            <label>Nombre d'adultes :
+                <input type="number" name="adultes" min="1" value="1" required>
+            </label>
+            <label>Nombre d'enfants :
+                <input type="number" name="enfants" min="0" value="0" required>
+            </label>
+
+            <label>Date :
+                <input type="date" name="date" required>
+            </label>
+            <span>Avez-vous des animaux de compagnie avec vous ?</span>
+            <div>
+                <label>
+                    <input type="radio" name="animaux" value="oui" required>
+                    Oui
+                </label>
+                <label>
+                    <input type="radio" name="animaux" value="non">
+                    Non
+                </label>
+            </div>
+            <label>Commentaires (optionnel) :
+                <input type="text" name="commentaires" placeholder="N'hésitez pas !">
+            </label>
+            <p>Beneficiez d'une reduction selon votre moyen de transport !</p>
+            <label>Moyen de transport (optionnel) :
+                <input list="transports-list" name="transport" id="transport" placeholder="Choisissez votre moyen de transport"
+                    autocomplete="off">
+                <datalist id="transports-list">
+                    <option value="voiture">
+                    <option value="avion">
+                    <option value="train">
+                    <option value="velo">
+                    <option value="pied">
+                    <option value="bus">
+                    <option value="autocar">
+                    <option value="trotinette">
+                    <option value="covoiturage">
+                    <option value="bateau">
+                </datalist>
+            </label>
+
+            <button type="submit">PAYER</button>
+        </form>
+        <section>
+            <div>
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=2.2935%2C48.8579%2C2.2955%2C48.8590&amp;layer=mapnik&amp;marker=48.8584%2C2.2945">
+                </iframe>
+                <small>
+                    <a href="https://www.openstreetmap.org/?mlat=48.8584&amp;mlon=2.2945#map=19/48.8584/2.2945">
+                        Voir la carte plus grande
+                    </a>
+                </small>
+            </div>
+        </section>
+
+    </main>
+        <footer>
+            <p>Liste des membres du projet : BOUFENECHE Khadija, PERCHERON Charline.</p>
+            <a href="../docs/rapport_projet.docx">Format Word (.docx)</a>
+            <a href="../docs/rapport_projet.pdf">Format PDF (.pdf)</a>
+            <p><img src="../images/Logo_iut.jpg" alt="Logo"></p>
+            <p>&copy; 2025 ARCANA — Tous droits réservés</p>
+        </footer>
+
+</body>
+
+</html>
