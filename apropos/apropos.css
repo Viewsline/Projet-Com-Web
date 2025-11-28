@@ -93,6 +93,10 @@ main h1, h2, h3 {
 	margin: 55px;
   padding: 20px;
 	background-image: url("../images/entete.png");
+  background-repeat: no-repeat;
+  /* Fill the element exactly: stretch to the element's width/height */
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .logo img {
