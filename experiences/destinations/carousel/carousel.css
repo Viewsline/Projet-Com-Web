@@ -66,9 +66,8 @@
 
 .carousel-controls button {
   pointer-events: auto;
-  background: rgba(255, 255, 255, 0.85);
   border: none;
-  padding: 0.35rem 0.6rem;
+  padding: 0.35rem 0.7rem;
   border-radius: 6px;
   cursor: pointer;
   z-index: 99999;

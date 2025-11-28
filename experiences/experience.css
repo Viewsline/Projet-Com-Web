@@ -22,7 +22,7 @@ main {
   padding: 1rem;
   transition: transform 250ms ease, box-shadow 250ms ease;
   will-change: transform, box-shadow;
-  font-family: "Courier New";
+  font-family: 'Courier Prime', monospace;
   display: flex;
   flex-direction: column;
 }

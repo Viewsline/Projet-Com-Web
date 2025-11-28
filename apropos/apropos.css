@@ -1,49 +1,72 @@
 @charset "UTF-8";
 
-/* Flex pour les sections texte + image */
-section {
+
+.Paragraphe {
   display: flex;
   gap: 2rem;
   margin: 40px 0;
-  align-items: stretch;
+  padding: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #f4ebe0 0%, white 100%);
 }
 
-/* Article = texte */
-section > article {
+
+.Paragraphe > article {
   flex: 1;
   padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Figure = image */
-section > figure {
+.Paragraphe > figure {
   flex: 1;
 }
 
-section > figure img {
+/*css image*/
+.Paragraphe > figure img {
+  border-radius: 0.5em;
+  padding: 20px;
   width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+
 }
 
-/* Inverser l’ordre du deuxième bloc */
-section:nth-of-type(1),
-section:nth-of-type(2) {
+
+.inverse {
   flex-direction: row-reverse;
 }
 
-/* Articles de la section "Éléments factuels" */
-main h1 + div {
+h2{
+  color: #701E39;
+  text-align: center;
+}
+
+p {
+  color: #333;
+}
+
+article p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+figure img {
+  border-radius: 10px;
+}
+
+.element-factuels > article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.element-factuels {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
 }
 
-header h1{
-	color: #f3ece2;
-}
-/* css de la section "Element factuels" */
-h1 + div > article {
+.element-factuels > article {
   background-color: white;
   border: 2px solid #701E39;
   border-radius: 10px;
@@ -52,38 +75,37 @@ h1 + div > article {
   text-align: center;
 }
 
-h1, h3 {
-  color: #701E39; /* ton bordeaux existant pour rester cohérent */
+ main p {
+	font-family: Courier New;
 }
 
-p, li {
-  color: #333; /* texte sombre, lisible */
+main h1, h2, h3 {
+	font-family: Impact;
 }
 
-/*Espacement autour des textes*/
-
-article p, article ul {
-  margin-bottom: 1rem;
-  line-height: 1.6; /* rend le texte plus aéré */
+.Paragraphe p {
+	font-size: 22px;
+	text-align: center;
+	
 }
 
-figure img {
-  border-radius: 10px;
+.element-factuels  {
+	margin: 55px;
+  padding: 20px;
+	background-image: url("../images/entete.png");
 }
 
-/* truc transparent */
-
-h1 + div > article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+.logo img {
+  border-radius: 0.5em;
+  padding: 20px;
+  width: 25rem;
 }
 
-section {
-  padding: 2rem 5%;
-  border-radius: 10px;
-}
 
-footer p{
-	color: #f3ece2;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: linear-gradient(180deg, #f4ebe0 0%, white 100%);
 }
