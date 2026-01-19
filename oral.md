@@ -18,8 +18,8 @@ Le nom ARCANA vient du latin et signifie « secret » et « mystère caché ». 
 ### Répartition du travail
 
 Nous avons organisé notre travail en nous répartissant les tâches de manière équitable :
-- **Khadija** : Conception et développement des pages d'expériences (jeunes fougueux, familles), création du système de carrousels pour les galeries photos, intégration des polices personnalisées
-- **Charline** : Développement de la page d'accueil, page seniors, page de réservation, page "À propos", harmonisation des styles et mise en place de la barre de navigation
+- **Khadija** : Développement de la page d'accueil et de la page "À propos"
+- **Charline** : Conception et développement des pages d'expériences (jeunes fougueux, familles), création du système de carrousels pour les galeries photos, page de réservation, et tout le reste du site
 
 Nous avons également travaillé ensemble sur la cohérence graphique globale du site et la validation du contenu.
 
@@ -79,44 +79,25 @@ Nous avons également travaillé sur l'optimisation du site en utilisant le **pr
 
 ### Difficultés individuelles
 
-#### Khadija : Le développement des carrousels
+#### Khadija : L'adaptation responsive et la cohérence visuelle
+**Difficulté** : Faire en sorte que la page d'accueil et la page "À propos" s'affichent correctement sur différentes tailles d'écran était un défi, notamment pour la mise en page avec les sections alternées.
+
+**Solution** : J'ai utilisé les **media queries**, qui sont des règles CSS permettant d'appliquer des styles différents selon la taille de l'écran. Par exemple, sur mobile, les sections qui s'affichent côte à côte sur ordinateur se superposent verticalement.
+
+**Réussite dont je suis fière** : La page "À propos" avec ses blocs alternés (texte à gauche puis à droite) qui s'adaptent parfaitement sur mobile tout en gardant une présentation élégante sur grand écran.
+
+#### Charline : Le développement des carrousels
 **Difficulté** : La création de carrousels interactifs en JavaScript était complexe, notamment pour gérer le défilement automatique et les boutons de navigation.
 
 **Solution** : J'ai créé un fichier JavaScript réutilisable pour chaque carrousel, en utilisant des fonctions qui gèrent le changement d'images à intervalles réguliers et qui permettent à l'utilisateur de naviguer manuellement entre les photos.
 
 **Réussite dont je suis fière** : J'ai réussi à créer un système de carrousel modulaire qui peut être facilement réutilisé sur différentes pages en changeant simplement les paramètres, ce qui rend le code maintenable et évolutif.
 
-#### Charline : L'adaptation responsive
-**Difficulté** : Faire en sorte que le site s'affiche correctement sur différentes tailles d'écran était un défi, notamment pour la mise en page de la page d'accueil avec ses sections alternées.
-
-**Solution** : J'ai utilisé les **media queries**, qui sont des règles CSS permettant d'appliquer des styles différents selon la taille de l'écran. Par exemple, sur mobile, les sections qui s'affichent côte à côte sur ordinateur se superposent verticalement.
-
-**Réussite dont je suis fière** : La page "À propos" avec ses blocs alternés (texte à gauche puis à droite) qui s'adaptent parfaitement sur mobile tout en gardant une présentation élégante sur grand écran.
-
 ---
 
 ## 4. Bilan Technique et Humain (2 min 30)
 
 ### Bilan de Khadija
-
-#### Compétences techniques développées :
-- **JavaScript** : J'ai appris à créer des fonctions interactives et à manipuler le DOM (Document Object Model), c'est-à-dire la structure de la page web, pour créer des éléments dynamiques
-- **Optimisation web** : J'ai découvert l'importance de l'optimisation des ressources (images, polices) pour améliorer la vitesse de chargement du site
-- **Architecture de projet** : J'ai compris l'importance d'organiser correctement les fichiers et de créer du code réutilisable
-
-#### Compétences techniques renforcées :
-- La maîtrise du HTML et du CSS que j'avais acquise précédemment
-- La capacité à déboguer mon code en utilisant les outils de développement du navigateur
-
-#### Qualités développées :
-- **Autonomie** : J'ai appris à chercher des solutions par moi-même en consultant la documentation et des forums spécialisés
-- **Rigueur** : La programmation m'a appris à être très attentive aux détails car une simple erreur de syntaxe peut empêcher tout un script de fonctionner
-
-#### Qualités renforcées :
-- **Persévérance** : Face aux bugs et aux difficultés techniques, j'ai développé ma capacité à ne pas abandonner et à tester différentes approches
-- **Organisation** : Gérer plusieurs fichiers JavaScript et CSS m'a obligée à structurer mon travail de manière méthodique
-
-### Bilan de Charline
 
 #### Compétences techniques développées :
 - **Responsive design** : J'ai appris à utiliser les media queries et les unités de mesure adaptatives (pourcentages, vw, vh) pour créer des interfaces qui s'adaptent à tous les écrans
@@ -134,6 +115,25 @@ Nous avons également travaillé sur l'optimisation du site en utilisant le **pr
 #### Qualités renforcées :
 - **Communication** : Travailler en binôme m'a obligée à communiquer clairement mes idées et à coordonner mon travail avec celui de ma coéquipière
 - **Sens du détail** : J'ai renforcé mon attention aux détails pour assurer une cohérence visuelle parfaite sur l'ensemble du site
+
+### Bilan de Charline
+
+#### Compétences techniques développées :
+- **JavaScript** : J'ai appris à créer des fonctions interactives et à manipuler le DOM (Document Object Model), c'est-à-dire la structure de la page web, pour créer des éléments dynamiques
+- **Optimisation web** : J'ai découvert l'importance de l'optimisation des ressources (images, polices) pour améliorer la vitesse de chargement du site
+- **Architecture de projet** : J'ai compris l'importance d'organiser correctement les fichiers et de créer du code réutilisable
+
+#### Compétences techniques renforcées :
+- La maîtrise du HTML et du CSS que j'avais acquise précédemment
+- La capacité à déboguer mon code en utilisant les outils de développement du navigateur
+
+#### Qualités développées :
+- **Autonomie** : J'ai appris à chercher des solutions par moi-même en consultant la documentation et des forums spécialisés
+- **Rigueur** : La programmation m'a appris à être très attentive aux détails car une simple erreur de syntaxe peut empêcher tout un script de fonctionner
+
+#### Qualités renforcées :
+- **Persévérance** : Face aux bugs et aux difficultés techniques, j'ai développé ma capacité à ne pas abandonner et à tester différentes approches
+- **Organisation** : Gérer plusieurs fichiers JavaScript et CSS m'a obligée à structurer mon travail de manière méthodique
 
 ---
 
